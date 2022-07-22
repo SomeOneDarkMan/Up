@@ -59,7 +59,7 @@ public class UpResume {
 
     }
     public static void upResume(WebDriver driver){
-       WebElement upButton =driver.findElement(By.xpath("//*[@id=\"HH-React-Root\"]/div/div[3]/div[1]/div/div/div[1]/div[3]/div[2]/div/div[6]/div/div/div[1]/div[1]/div/span/button"));
+       WebElement upButton =driver.findElement(By.xpath("//*[@id=\"HH-React-Root\"]/div/div[3]/div[1]/div/div/div[1]/div[3]/div[2]/div/div[6]/div/div/div[1]/div[1]/span/button"));
       upButton.click();
     }
     public static Long sleepMyProgram(String ms){
