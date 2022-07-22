@@ -41,18 +41,14 @@ public class UpResume {
             WebElement bupForAuth= driver.findElement(By.xpath("//*[@id=\"HH-React-Root\"]/div/div[3]/div[1]/div/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/form/div[4]/div/button[1]/span"));
             bupForAuth.click();
             Thread.sleep(4000);
-            Set<Cookie> cookies = driver.manage().getCookies();
-            FileOutputStream save=new FileOutputStream("cookies.bin");
-            ObjectOutputStream oos=new  ObjectOutputStream(save);
-            oos.writeObject(cookies);
-            oos.close();
+           // Set<Cookie> cookies = driver.manage().getCookies();
+            //FileOutputStream save=new FileOutputStream("cookies.bin");
+          //  ObjectOutputStream oos=new  ObjectOutputStream(save);
+          //  oos.writeObject(cookies);
+          //  oos.close();
             // driver.manage().addCookie(new Cookie("_xsrf", "value"));
             // driver.manage().addCookie(new Cookie("_xsrf", "value"));
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
