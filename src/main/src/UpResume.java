@@ -83,7 +83,7 @@ public class UpResume {
         System.setProperty("webdriver.chrome.driver", "D:\\Загрузки\\UpResume\\chromedriver\\chromedriver.exe");//полный путь до драйвера под ваш браузер
         //следите за версией драйвера и брузера они должны совподать
         WebDriver driver = new ChromeDriver();
-       UpResume.saveCookieInFile(driver,"89525365191","147852369*+*");
+       UpResume.saveCookieInFile(driver,"your login","your password");
        while (true){
        driver.get("https://smolensk.hh.ru/applicant/resumes?hhtmFromLabel=header&hhtmFrom=main");
        Thread.sleep(2000);
